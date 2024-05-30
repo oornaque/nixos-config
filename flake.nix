@@ -18,7 +18,7 @@
     nixosConfigurations.main = nixpkgs.lib.nixosSystem {
       # https://github.com/NixOS/nixpkgs/blob/nixos-23.11/flake.nix#L21
       system = "x86_64-linux";
-      modules = [ ./configuration.nix disko.nixosModules.disko ];
+      modules = [ disko.nixosModules.disko ./disk-config.nix ./configuration.nix ];
     };
 
     # Available through 'home-manager --flake .#user'
