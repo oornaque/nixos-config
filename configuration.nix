@@ -6,8 +6,6 @@
   
   imports = [
     ./hardware-configuration.nix
-    "${builtins.fetchTarball "https://github.com/nix-community/disko/archive/master.tar.gz"}/module.nix"
-    ./disk-config.nix
   ];
 
   boot.loader.systemd-boot.enable = true;
@@ -15,7 +13,7 @@
 
   nixpkgs.config.allowUnfree = true;
 
-  networking.hostname = "hostname";
+  networking.hostName = "hostname";
 
   time.timeZone = "Europe/Madrid";
 
