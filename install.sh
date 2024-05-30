@@ -9,5 +9,5 @@ sudo nixos-generate-config --no-filesystems --root /mnt
 sudo cp *.nix /mnt/etc/nixos
 cd /mnt/etc/nixos
 sudo nixos-install --flake .#main
-sudo nixos-rebuild switch
+sudo nixos-rebuild switch --flake .#main
 reboot
