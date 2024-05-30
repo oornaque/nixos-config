@@ -71,6 +71,6 @@
     config.modifier = "Mod4";
   };
 
-  home.stateVersion = system.stateVersion;
+  home.stateVersion = "23.11";
   programs.home-manager.enable = true;
 }
